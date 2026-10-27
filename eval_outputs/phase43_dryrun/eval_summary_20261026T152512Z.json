@@ -1,0 +1,104 @@
+[
+  {
+    "total": 52,
+    "api_errors": 0,
+    "avg_latency_s": 0.0,
+    "must_include": {
+      "PASS": 0,
+      "FAIL": 49,
+      "N/A": 3
+    },
+    "must_not_include": {
+      "PASS": 8,
+      "FAIL": 0,
+      "N/A": 44
+    },
+    "retrieval_recall": {
+      "PASS": 0,
+      "PARTIAL": 0,
+      "FAIL": 47,
+      "N/A": 5
+    },
+    "unanswerable_refused": 5,
+    "config": "baseline",
+    "mode": "dry-run",
+    "configured_provider": "gemini",
+    "provider_priority": "groq \u2192 nvidia \u2192 gemini",
+    "dataset_date": "20 October 2026",
+    "timestamp": "20261026T152512Z",
+    "questions": 52,
+    "top_k": 5,
+    "output_csv": "eval_outputs/phase43_dryrun/eval_baseline_questions_20261026T152512Z.csv"
+  },
+  {
+    "total": 52,
+    "api_errors": 0,
+    "avg_latency_s": 0.019,
+    "must_include": {
+      "PASS": 1,
+      "FAIL": 48,
+      "N/A": 3
+    },
+    "must_not_include": {
+      "PASS": 8,
+      "FAIL": 0,
+      "N/A": 44
+    },
+    "retrieval_recall": {
+      "PASS": 15,
+      "PARTIAL": 16,
+      "FAIL": 16,
+      "N/A": 5
+    },
+    "unanswerable_refused": 5,
+    "config": "rag",
+    "mode": "dry-run",
+    "configured_provider": "gemini",
+    "provider_priority": "groq \u2192 nvidia \u2192 gemini",
+    "dataset_date": "20 October 2026",
+    "timestamp": "20261026T152512Z",
+    "questions": 52,
+    "top_k": 5,
+    "output_csv": "eval_outputs/phase43_dryrun/eval_rag_questions_20261026T152512Z.csv"
+  },
+  {
+    "total_turns": 96,
+    "api_errors": 0,
+    "avg_latency_s": 0.0,
+    "tool_call_match": {
+      "PASS": 52,
+      "FAIL": 2,
+      "N/A": 42,
+      "UNEXPECTED": 0
+    },
+    "must_include": {
+      "PASS": 0,
+      "FAIL": 77,
+      "N/A": 19
+    },
+    "must_not_include": {
+      "PASS": 14,
+      "FAIL": 0,
+      "N/A": 82
+    },
+    "retrieval_recall": {
+      "PASS": 43,
+      "PARTIAL": 5,
+      "FAIL": 48,
+      "N/A": 0
+    },
+    "verification_turns": 25,
+    "verification_correct": 25,
+    "escalation_turns": 6,
+    "escalation_correct": 4,
+    "config": "full",
+    "mode": "dry-run",
+    "configured_provider": "gemini",
+    "provider_priority": "groq \u2192 nvidia \u2192 gemini",
+    "dataset_date": "20 October 2026",
+    "timestamp": "20261026T152514Z",
+    "conversations": 23,
+    "top_k": 5,
+    "output_csv": "eval_outputs/phase43_dryrun/eval_full_conversations_20261026T152514Z.csv"
+  }
+]

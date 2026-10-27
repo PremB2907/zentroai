@@ -1,0 +1,10 @@
+id,language,intent,expected_decision,answerable,question,gold_evidence,reference_answer,retrieved_sections,retrieval_recall,model_response,provider_used,error,latency_s,heuristic_must_include,heuristic_must_not_include,is_api_error,needs_manual_review
+PQ0002,hi-en,warranty,answer,True,SKU ELE-0012 pe ZentroMart Assured hai kya? Claim kaise karein?,WAR-2 ; products.csv:ELE-0012,"Haan, 12 mahine ki Assured warranty hai; claim app mein My Orders se karein.",,FAIL,"Hello!  I can help with that. 
+
+The SKU ELE-0012 is indeed available on ZentroMart. To claim your purchase, please follow these steps:
+
+1. **Visit the ""My Orders"" section** on your account dashboard.
+2. **Locate the order containing the SKU ELE-0012.**
+3. **Click on the ""Claim"" button** next to the product. 
+
+If you encounter any difficulties or have further questions, feel free to contact our customer support team for assistance.  They'll be happy to help! 😊",ollama,,14.428,PASS,N/A,False,False

@@ -1,0 +1,20 @@
+ZentroAI RAG Evaluation Summary
+=================================
+Timestamp      : 20261026T142040Z
+Mode           : retrieve-only
+Provider       : gemini
+Dataset date   : 20 October 2026
+Questions run  : 10
+top_k          : 5
+API errors     : 0
+Avg retrieved  : 4.3 chunks/question
+
+Heuristic keyword checks (INFORMATIONAL – not authoritative scores)
+-------------------------------------------------------------------
+must_include  PASS: 0  FAIL: 10  N/A: 0
+must_not_incl PASS: 0  FAIL: 2  N/A: 8
+
+Output file: /home/prem/Prem Projects/zentroai/outputs/eval_rag_responses_20261026T142040Z.csv
+
+NOTE: Heuristic keyword matching is a rough proxy.
+Human review of the CSV columns is required before reporting official scores.

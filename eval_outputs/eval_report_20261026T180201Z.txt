@@ -1,0 +1,29 @@
+
+══════════════════════════════════════════════════════════
+  ZentroAI Evaluation Summary  (2026-10-26 18:02 UTC)
+  Dataset date: 20 October 2026
+══════════════════════════════════════════════════════════
+
+  Config RAG (live)
+  Provider   : ollama
+  Questions  : 5  (dataset: 20 October 2026)
+  API errors : 0
+  Avg latency: 3.212s
+
+  ── PROXY METRICS (INFORMATIONAL — not authoritative) ──
+  must_include  : PASS: 5  FAIL: 0  N/A: 0
+  must_not_incl : PASS: 2  FAIL: 0  N/A: 3
+  retrieval     : PASS=3  PARTIAL=1  FAIL=0  N/A=1
+  Output CSV : /home/prem/Prem Projects/zentroai/eval_outputs/eval_rag_questions_20261026T180201Z.csv
+
+  ── METRIC DEFINITIONS ──────────────────────────────────
+  must_include   : keyword present in response (proxy only)
+  must_not_incl  : banned keyword absent (proxy only)
+  retrieval      : gold section IDs found in retrieved set
+  tool_call      : normalised string match of tool invocation
+  verif turns    : turns with expected verification tool call
+  escalation     : turns with expected create_ticket() call
+
+  Human review required for: semantic correctness, language
+  quality, policy compliance, unanswerable-question handling.
+══════════════════════════════════════════════════════════

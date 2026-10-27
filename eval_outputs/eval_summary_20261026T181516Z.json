@@ -1,0 +1,42 @@
+[
+  {
+    "total_turns": 96,
+    "api_errors": 0,
+    "avg_latency_s": 0.0,
+    "tool_call_match": {
+      "PASS": 52,
+      "FAIL": 2,
+      "N/A": 42,
+      "UNEXPECTED": 0
+    },
+    "must_include": {
+      "PASS": 0,
+      "FAIL": 77,
+      "N/A": 19
+    },
+    "must_not_include": {
+      "PASS": 14,
+      "FAIL": 0,
+      "N/A": 82
+    },
+    "retrieval_recall": {
+      "PASS": 43,
+      "PARTIAL": 5,
+      "FAIL": 48,
+      "N/A": 0
+    },
+    "verification_turns": 25,
+    "verification_correct": 25,
+    "escalation_turns": 6,
+    "escalation_correct": 4,
+    "config": "full",
+    "mode": "dry-run",
+    "configured_provider": "ollama",
+    "provider_priority": "ollama (default) | groq | nvidia | gemini (explicit override)",
+    "dataset_date": "20 October 2026",
+    "timestamp": "20261026T181516Z",
+    "conversations": 23,
+    "top_k": 5,
+    "output_csv": "/home/prem/Prem Projects/zentroai/eval_outputs/eval_full_conversations_20261026T181516Z.csv"
+  }
+]

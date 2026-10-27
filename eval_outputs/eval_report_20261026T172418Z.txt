@@ -1,0 +1,56 @@
+
+══════════════════════════════════════════════════════════
+  ZentroAI Evaluation Summary  (2026-10-26 17:24 UTC)
+  Dataset date: 20 October 2026
+══════════════════════════════════════════════════════════
+
+  Config BASELINE (dry-run)
+  Provider   : groq
+  Questions  : 5  (dataset: 20 October 2026)
+  API errors : 0
+  Avg latency: 0.0s
+
+  ── PROXY METRICS (INFORMATIONAL — not authoritative) ──
+  must_include  : PASS: 0  FAIL: 5  N/A: 0
+  must_not_incl : PASS: 2  FAIL: 0  N/A: 3
+  retrieval     : PASS=0  PARTIAL=0  FAIL=4  N/A=1
+  Output CSV : /home/prem/Prem Projects/zentroai/eval_outputs/eval_baseline_questions_20261026T172418Z.csv
+
+  Config RAG (dry-run)
+  Provider   : groq
+  Questions  : 5  (dataset: 20 October 2026)
+  API errors : 0
+  Avg latency: 0.036s
+
+  ── PROXY METRICS (INFORMATIONAL — not authoritative) ──
+  must_include  : PASS: 0  FAIL: 5  N/A: 0
+  must_not_incl : PASS: 2  FAIL: 0  N/A: 3
+  retrieval     : PASS=1  PARTIAL=3  FAIL=0  N/A=1
+  Output CSV : /home/prem/Prem Projects/zentroai/eval_outputs/eval_rag_questions_20261026T172418Z.csv
+
+  Config FULL (dry-run)
+  Provider   : groq
+  Convs/turns: 2 / 9
+  API errors : 0
+  Avg latency: 0.0s
+
+  ── PROXY METRICS (INFORMATIONAL — not authoritative) ──
+  must_include  : PASS: 0  FAIL: 7  N/A: 2
+  must_not_incl : PASS: 2  FAIL: 0  N/A: 7
+  retrieval     : PASS=4  PARTIAL=2  FAIL=3  N/A=0
+  tool_call     : PASS: 4  FAIL: 1  N/A: 4  UNEXPECTED: 0
+  verif turns   : 2/2 correct
+  escalation    : 0/1 correct
+  Output CSV : /home/prem/Prem Projects/zentroai/eval_outputs/eval_full_conversations_20261026T172419Z.csv
+
+  ── METRIC DEFINITIONS ──────────────────────────────────
+  must_include   : keyword present in response (proxy only)
+  must_not_incl  : banned keyword absent (proxy only)
+  retrieval      : gold section IDs found in retrieved set
+  tool_call      : normalised string match of tool invocation
+  verif turns    : turns with expected verification tool call
+  escalation     : turns with expected create_ticket() call
+
+  Human review required for: semantic correctness, language
+  quality, policy compliance, unanswerable-question handling.
+══════════════════════════════════════════════════════════

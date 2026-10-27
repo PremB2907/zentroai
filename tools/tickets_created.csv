@@ -1,0 +1,5 @@
+ticket_id,created_at,order_id,intent,reason,summary
+TKT4648b758987a428191be2a0712880d6b,2026-10-26T23:51:09,37113676,customer_request,customer_request,Customer reports: क्या मैं किसी इंसान से बात कर सकती हूँ?. Order 37113676. Reason: Customer requested human agent (ESC-1 rule 6). Escalation at turn 4.
+TKT12764d0e98894f8088e4be729cd5c015,2026-10-26T23:51:17,66492475,customer_request,customer_request,"Customer reports: Actually, can I just speak to a person?. Order 66492475. Reason: Customer requested human agent (ESC-1 rule 6). Escalation at turn 4."
+TKT31229b20ade1481a851e8669842d5dc8,2026-10-26T23:51:23,45011817,repeat_contact,repeat_contact,Customer reports: Last four digits 1267 hain.. Order 45011817. Reason: Order has 2 prior contacts in 7 days (ESC-1 rule 4). Escalation at turn 3.
+TKT862a6f7a82374e099b2bdddd183322fb,2026-10-26T23:51:31,48196636,repeat_contact,repeat_contact,Customer reports: The last four digits are 7725.. Order 48196636. Reason: Order has 2 prior contacts in 7 days (ESC-1 rule 4). Escalation at turn 3.

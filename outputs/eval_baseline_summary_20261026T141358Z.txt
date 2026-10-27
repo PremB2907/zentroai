@@ -1,0 +1,19 @@
+ZentroAI Baseline Evaluation Summary
+=====================================
+Timestamp      : 20261026T141358Z
+Provider       : gemini
+Dataset date   : 20 October 2026
+Questions run  : 5
+Dry run        : True
+API errors     : 0
+
+Heuristic keyword checks (INFORMATIONAL – not authoritative scores)
+-------------------------------------------------------------------
+must_include  PASS: 0  FAIL: 5  N/A: 0
+must_not_incl PASS: 2  FAIL: 0  N/A: 3
+
+Output file: /home/prem/Prem Projects/zentroai/outputs/eval_baseline_responses_20261026T141358Z.csv
+
+NOTE: Heuristic keyword matching is a rough proxy. Human review of
+must_include / must_not_include columns in the CSV is required before
+reporting any official score.

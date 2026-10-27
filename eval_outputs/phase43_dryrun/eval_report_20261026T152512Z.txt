@@ -1,0 +1,56 @@
+
+══════════════════════════════════════════════════════════
+  ZentroAI Evaluation Summary  (2026-10-26 15:25 UTC)
+  Dataset date: 20 October 2026
+══════════════════════════════════════════════════════════
+
+  Config BASELINE (dry-run)
+  Provider   : ?
+  Questions  : 52  (dataset: 20 October 2026)
+  API errors : 0
+  Avg latency: 0.0s
+
+  ── PROXY METRICS (INFORMATIONAL — not authoritative) ──
+  must_include  : PASS: 0  FAIL: 49  N/A: 3
+  must_not_incl : PASS: 8  FAIL: 0  N/A: 44
+  retrieval     : PASS=0  PARTIAL=0  FAIL=47  N/A=5
+  Output CSV : eval_outputs/phase43_dryrun/eval_baseline_questions_20261026T152512Z.csv
+
+  Config RAG (dry-run)
+  Provider   : ?
+  Questions  : 52  (dataset: 20 October 2026)
+  API errors : 0
+  Avg latency: 0.019s
+
+  ── PROXY METRICS (INFORMATIONAL — not authoritative) ──
+  must_include  : PASS: 1  FAIL: 48  N/A: 3
+  must_not_incl : PASS: 8  FAIL: 0  N/A: 44
+  retrieval     : PASS=15  PARTIAL=16  FAIL=16  N/A=5
+  Output CSV : eval_outputs/phase43_dryrun/eval_rag_questions_20261026T152512Z.csv
+
+  Config FULL (dry-run)
+  Provider   : ?
+  Convs/turns: 23 / 96
+  API errors : 0
+  Avg latency: 0.0s
+
+  ── PROXY METRICS (INFORMATIONAL — not authoritative) ──
+  must_include  : PASS: 0  FAIL: 77  N/A: 19
+  must_not_incl : PASS: 14  FAIL: 0  N/A: 82
+  retrieval     : PASS=43  PARTIAL=5  FAIL=48  N/A=0
+  tool_call     : PASS: 52  FAIL: 2  N/A: 42  UNEXPECTED: 0
+  verif turns   : 25/25 correct
+  escalation    : 4/6 correct
+  Output CSV : eval_outputs/phase43_dryrun/eval_full_conversations_20261026T152514Z.csv
+
+  ── METRIC DEFINITIONS ──────────────────────────────────
+  must_include   : keyword present in response (proxy only)
+  must_not_incl  : banned keyword absent (proxy only)
+  retrieval      : gold section IDs found in retrieved set
+  tool_call      : normalised string match of tool invocation
+  verif turns    : turns with expected verification tool call
+  escalation     : turns with expected create_ticket() call
+
+  Human review required for: semantic correctness, language
+  quality, policy compliance, unanswerable-question handling.
+══════════════════════════════════════════════════════════

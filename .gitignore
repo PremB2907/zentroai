@@ -1,0 +1,15 @@
+# .gitignore
+# Python cache
+__pycache__/
+*.pyc
+# Virtual environment
+.venv/
+# Environment variables
+.env
+# IDE files
+*.idea/
+*.vscode/
+# Build artefacts
+build/
+# Pytest cache
+.pytest_cache/

@@ -1,0 +1,104 @@
+[
+  {
+    "total": 5,
+    "api_errors": 0,
+    "avg_latency_s": 0.0,
+    "must_include": {
+      "PASS": 0,
+      "FAIL": 5,
+      "N/A": 0
+    },
+    "must_not_include": {
+      "PASS": 2,
+      "FAIL": 0,
+      "N/A": 3
+    },
+    "retrieval_recall": {
+      "PASS": 0,
+      "PARTIAL": 0,
+      "FAIL": 4,
+      "N/A": 1
+    },
+    "unanswerable_refused": 1,
+    "config": "baseline",
+    "mode": "dry-run",
+    "configured_provider": "groq",
+    "provider_priority": "ollama (default) | groq | nvidia | gemini (explicit override)",
+    "dataset_date": "20 October 2026",
+    "timestamp": "20261026T172418Z",
+    "questions": 5,
+    "top_k": 5,
+    "output_csv": "/home/prem/Prem Projects/zentroai/eval_outputs/eval_baseline_questions_20261026T172418Z.csv"
+  },
+  {
+    "total": 5,
+    "api_errors": 0,
+    "avg_latency_s": 0.036,
+    "must_include": {
+      "PASS": 0,
+      "FAIL": 5,
+      "N/A": 0
+    },
+    "must_not_include": {
+      "PASS": 2,
+      "FAIL": 0,
+      "N/A": 3
+    },
+    "retrieval_recall": {
+      "PASS": 1,
+      "PARTIAL": 3,
+      "FAIL": 0,
+      "N/A": 1
+    },
+    "unanswerable_refused": 1,
+    "config": "rag",
+    "mode": "dry-run",
+    "configured_provider": "groq",
+    "provider_priority": "ollama (default) | groq | nvidia | gemini (explicit override)",
+    "dataset_date": "20 October 2026",
+    "timestamp": "20261026T172418Z",
+    "questions": 5,
+    "top_k": 5,
+    "output_csv": "/home/prem/Prem Projects/zentroai/eval_outputs/eval_rag_questions_20261026T172418Z.csv"
+  },
+  {
+    "total_turns": 9,
+    "api_errors": 0,
+    "avg_latency_s": 0.0,
+    "tool_call_match": {
+      "PASS": 4,
+      "FAIL": 1,
+      "N/A": 4,
+      "UNEXPECTED": 0
+    },
+    "must_include": {
+      "PASS": 0,
+      "FAIL": 7,
+      "N/A": 2
+    },
+    "must_not_include": {
+      "PASS": 2,
+      "FAIL": 0,
+      "N/A": 7
+    },
+    "retrieval_recall": {
+      "PASS": 4,
+      "PARTIAL": 2,
+      "FAIL": 3,
+      "N/A": 0
+    },
+    "verification_turns": 2,
+    "verification_correct": 2,
+    "escalation_turns": 1,
+    "escalation_correct": 0,
+    "config": "full",
+    "mode": "dry-run",
+    "configured_provider": "groq",
+    "provider_priority": "ollama (default) | groq | nvidia | gemini (explicit override)",
+    "dataset_date": "20 October 2026",
+    "timestamp": "20261026T172419Z",
+    "conversations": 2,
+    "top_k": 5,
+    "output_csv": "/home/prem/Prem Projects/zentroai/eval_outputs/eval_full_conversations_20261026T172419Z.csv"
+  }
+]
